@@ -1,0 +1,67 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+void searchValue(int arr[],int size,int value){
+7
+    int found=0;
+8
+    for(int i=0;i<size;i++){
+9
+        if(arr[i]==value){
+10
+            printf("Found");
+11
+            found=1;
+12
+            break;
+13
+        }
+14
+    }
+15
+    if(!found){
+16
+        printf("Not found");
+17
+        
+18
+    }
+19
+}
+20
+​
+21
+int main() {
+22
+int size,value;
+23
+    scanf("%d",&size);
+24
+    int arr[size];
+25
+    for(int i=0;i<size;i++){
+26
+        scanf("%d",&arr[i]);
+27
+        
+28
+    }
+29
+    scanf("%d",&value);
+30
+    searchValue(arr,size,value);
+31
+       
+32
+    
+33
+    return 0;
+34
+}
